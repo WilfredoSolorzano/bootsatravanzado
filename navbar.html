@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active{
+            color:#fff
+        }
+        .nav-link{
+            text-align: center;
+        }
+        section{
+            height: 100vh;
+            background-color:#fff;
+            padding: 70px;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Titulo do site</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav  nav-pills">
+                        <li class="nav-item">
+                            <a href="#Inicio" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Produto" class="nav-link">Produto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Promoções" class="nav-link">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Contato" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="Inicio">
+            <h2>Inicio</h2>
+        </section>
+        <section id="Produto">
+            <h2>Produto</h2>
+            <div class="container">
+                <nav class="nav nav-pills">
+                    <button data-bs-toggle="tab" data-bs-target="#tab1" class="nav-link active" type="button">Electronicos</button>
+                    <button data-bs-toggle="tab" data-bs-target="#tab2" class="nav-link" type="button">Moda Masculina</button>
+                    <button data-bs-toggle="tab" data-bs-target="#tab3" class="nav-link" type="button">Moda Femenina</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        Conteudo da aba Electronicos
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        Conteudo da aba Moda Masculina
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        conteudo da aba Moda Femenina
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Promoções">
+            <h2>Promoções</h2>
+        </section>
+        <section id="Contato">
+            <h2>Contato</h2>
+        </section>
+    </div>
+    <script src="./bootstrap.bundle.min.js.js"></script>
+</body>
+</html>
